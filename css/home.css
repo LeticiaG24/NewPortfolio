@@ -39,11 +39,23 @@
     color: white;
 }
 
+
+.tec-container {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
 .tec-container > div {
-    background-color: rgba(217, 217, 217, 0.03);
+    background-color: rgba(217, 217, 217, 0.1);
+    border-radius: 15px;
+    width: 80px;
+    height: 80px;
+    align-content: center;
+    justify-items: center;
 }
 .tec-container img {
-    max-width: 80px;
+    width: 80%;
+    display: block;
 }
 
 .contactme {

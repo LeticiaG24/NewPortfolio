@@ -75,7 +75,13 @@ class TechManager {
             new Tecnologia("MySQL", "https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000", "BD"),
             new Tecnologia("Figma", "https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000", "F"),
             new Tecnologia("JavaFX", "https://img.icons8.com/?size=100&id=13679&format=png&color=000000", "BF"),
-            new Tecnologia("Flask", "https://icon.icepanel.io/Technology/png-shadow-512/Flask.png", "BF")
+            new Tecnologia("Flask", "https://icon.icepanel.io/Technology/png-shadow-512/Flask.png", "BF"),
+            new Tecnologia("Git", "https://icon.icepanel.io/Technology/svg/Git.svg", "F"),
+            new Tecnologia("GitHub", "https://img.icons8.com/?size=100&id=62856&format=png&color=000000", "F"),
+            new Tecnologia("Maven", "https://icon.icepanel.io/Technology/svg/Apache-Maven.svg", "F"),
+            new Tecnologia("Jira", "https://icon.icepanel.io/Technology/svg/Jira.svg", "F"),
+            new Tecnologia("Canva", "https://icon.icepanel.io/Technology/svg/Canva.svg", "F"),
+            new Tecnologia("Vercel", "https://icon.icepanel.io/Technology/png-shadow-512/Vercel.png", "F")
         ]
     }
 
@@ -89,10 +95,10 @@ class TechManager {
     }
 
     carregarProjetos() {
-        const [python, java, js, html, css, mysql, figma, javafx, flask] = this.tecnologias;
+        const [python, java, js, html, css, mysql, figma, javafx, flask, git, github, maven, jira, canva] = this.tecnologias;
 
         this.projetos = [
-            new Projeto("/img/siraas.jpg", "SIRAAS", [python, html, css, figma, flask], "Teste")
+            new Projeto("/img/siraas.jpg", "SIRAAS", [python, flask, html, css, figma, canva], "Teste")
         ]
     }
 
