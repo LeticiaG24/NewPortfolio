@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Letícia Furtado</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <button>Home</button>
+            <button>About me</button>
+            <button>Projects</button>
+            <button>Skills</button>
+            <button>Certificates</button>
+        </nav>
+    </header>
+    <main>
+        <h2>Full Stack Developer</h2>
+        <h1>Letícia Furtado</h1>
+        <p>Estudante de Análise e Desenvolvimento de Sistemas na Fatec e escolhi a área de tecnologia pelo meu interesse em resolver problemas de lógica e transformar ideias em soluções por meio da programação.</p>
+        <button>email</button>
+    </main>
+    <section class="about">
+        <div class="aboutme">
+            <h3>About me</h3>
+        </div>
+        <div class="soft">
+            <h3>Methodologies</h3>
+            <ul>
+                <li>Scrum</li>
+                <li>Design Thinking</li>
+            </ul>
+            <h3>Soft skills</h3>
+            <ul>
+                <li>Trabalho em equipe</li>
+            </ul>
+        </div>
+        <div class="myprojects">
+            <h3>See my projects</h3>
+            <button>Projects</button>
+        </div>
+        <div class="resume">
+            <h3>Get my resume</h3>
+            <button>Document</button>
+        </div>
+    </section>
+    <section>
+        <h1>Projects</h1>
+        <hr>
+        <h2>Featured projects that highlight my skills.</h2>
+        <button>seta</button>
+        <div id="projetoContainer">
+            
+        </div>
+        <button>seta</button>
+        <button>See all projects</button>
+    </section>
+    <section>
+        <h1>Hard skills</h1>
+        <hr>
+        <h2>The technical foundation supporting my work.</h2>
+        <div class="tec-container" id="tecnologiaContainer">
+
+        </div>
+    </section>
+    <section>
+        <h1>Certificates</h1>
+        <hr>
+        <h2>My commitment to lifelong learning.</h2>
+        <div class="certificado-container" id="certificadoContainer">
+            
+        </div>
+        <button>See all certificates</button>
+    </section>
+    <section class="contactme">
+        <img src="/img/venus.png" alt="venus">
+        <div class="worktogether">
+            <h1>Let's Work Together!</h1>
+            <h2>Tell me about your next big idea.</h2>
+            <button class="connect">Let's connect</button>
+        </div>
+    </section>
+    <footer>
+        <div class="leticia">
+            <img src="/img/logo.png" alt="logo">
+            <h1>Letícia Furtado</h1>
+            <h2>Full Stack Developer</h2>
+            <button>Linkedin</button>
+            <button>GitHub</button>
+        </div>
+        <div class="quicklinks">
+            <h2>Quick Links</h2>
+            <a href="">Home</a>
+            <a href="">About me</a>
+            <a href="">Projects</a>
+            <a href="">Skills</a>
+            <a href="">Certificates</a>
+        </div>
+        <p>© 2025 Letícia Furtado. All rights reserved.</p>
+    </footer>
+    <script src="/js/Certificado.js"></script>
+    <script src="/js/Tecnologia.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const certificateManager = new CertificateManager();
+            const techManager = new TechManager();
+        });
+    </script>
+</body>
+</html>

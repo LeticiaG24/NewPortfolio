@@ -1,0 +1,68 @@
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+.aboutme {
+    grid-column: 1/3;
+}
+.soft {
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+.myprojects {
+    justify-items: center;
+}
+.resume {
+    justify-items: center;
+}
+.about > div {
+    background-color: rgba(217, 217, 217, 0.03);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(217, 217, 217, 0.1);
+}
+
+.certificado-card {
+    width: 300px;
+    background-color: rgba(217, 217, 217, 0.03);
+    padding: 10px;
+}
+.certificado-card > div {
+    display: flex;
+    justify-content: space-between;
+}
+.certificado-card > a {
+    display: block;
+    justify-self: end;
+    color: white;
+}
+
+.tec-container > div {
+    background-color: rgba(217, 217, 217, 0.03);
+}
+.tec-container img {
+    max-width: 80px;
+}
+
+.contactme {
+    display: flex;
+}
+.contactme > img {
+    max-height: 500px;
+}
+section {
+    margin: 40px 0 40px;
+}
+.projeto-especifico {
+    max-height: 300px;
+    display: flex;
+    gap: 10px;
+}
+.projeto-especifico > img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover; 
+    object-position: center;
+}
