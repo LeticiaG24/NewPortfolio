@@ -87,6 +87,9 @@ class TechManager {
 
     renderizarTecnologias() {
         const container = document.getElementById('tecnologiaContainer');
+        if (!container) {
+            return;
+        }
         container.innerHTML = '';
 
         this.tecnologias.forEach(tecnologia => {
