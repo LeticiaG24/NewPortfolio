@@ -1,3 +1,29 @@
+body {
+  font-size: clamp(1rem, 2.5vw, 1.5rem); 
+}
+.email {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+.left-hand {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.right-hand {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+main {
+    height: 100vh;
+    text-align: center;
+}
+main > p {
+    max-width: 600px;
+    justify-self: center;
+}
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

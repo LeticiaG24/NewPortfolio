@@ -19,10 +19,14 @@
         </nav>
     </header>
     <main>
+        <img src="/img/right-hand.png" alt="hand" class="right-hand">
         <h2>Full Stack Developer</h2>
         <h1>Letícia Furtado</h1>
         <p>Estudante de Análise e Desenvolvimento de Sistemas na Fatec e escolhi a área de tecnologia pelo meu interesse em resolver problemas de lógica e transformar ideias em soluções por meio da programação.</p>
-        <button>email</button>
+        <button class="email" value="leticia24062006@gmail.com" id="copiarEmail" onclick="copiar()">
+            <i class="fa-regular fa-clone"></i> leticia24062006@gmail.com
+        </button>
+        <img src="/img/left-hand.png" alt="hand" class="left-hand">
     </main>
     <section class="about">
         <div class="aboutme">
@@ -104,6 +108,7 @@
     </footer>
     <script src="/js/Certificado.js"></script>
     <script src="/js/Tecnologia.js"></script>
+    <script src="/js/Contato.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const certificateManager = new CertificateManager();
