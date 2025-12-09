@@ -6,29 +6,37 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/home.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&family=Inder&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <title>Letícia Furtado</title>
 </head>
 <body>
     <header>
         <nav>
-            <button>Home</button>
-            <button>About me</button>
-            <button>Projects</button>
-            <button>Skills</button>
-            <button>Certificates</button>
+            <button data-section="home">Home</button>
+            <button data-section="about">About me</button>
+            <button data-section="projects">Projects</button>
+            <button data-section="skills">Skills</button>
+            <button data-section="certificate">Certificates</button>
         </nav>
     </header>
-    <main>
-        <img src="/img/right-hand.png" alt="hand" class="right-hand">
-        <h2>Full Stack Developer</h2>
-        <h1>Letícia Furtado</h1>
-        <p>Estudante de Análise e Desenvolvimento de Sistemas na Fatec e escolhi a área de tecnologia pelo meu interesse em resolver problemas de lógica e transformar ideias em soluções por meio da programação.</p>
-        <button class="email" value="leticia24062006@gmail.com" id="copiarEmail" onclick="copiar()">
-            <i class="fa-regular fa-clone"></i> leticia24062006@gmail.com
-        </button>
-        <img src="/img/left-hand.png" alt="hand" class="left-hand">
+    <main id="home">
+        <div class="hands">
+            <img src="/img/right-hand.png" alt="hand" class="right-hand">
+            <img src="/img/left-hand.png" alt="hand" class="left-hand">
+        </div>
+        <div class="introducao">
+            <h2>Full Stack Developer</h2>
+            <h1>Letícia Furtado</h1>
+            <p>Estudante de Análise e Desenvolvimento de Sistemas na Fatec e escolhi a área de tecnologia pelo meu interesse em resolver problemas de lógica e transformar ideias em soluções por meio da programação.</p>
+            <button class="email" value="leticia24062006@gmail.com" id="copiarEmail" onclick="copiar()">
+                <i class="fa-regular fa-clone"></i> leticia24062006@gmail.com
+            </button>
+        </div>
     </main>
-    <section class="about">
+    <section class="about" id="about">
         <div class="aboutme">
             <h3>About me</h3>
         </div>
@@ -41,6 +49,11 @@
             <h3>Soft skills</h3>
             <ul>
                 <li>Trabalho em equipe</li>
+                <li>Aprendizado ativo</li>
+                <li>Gestão de tempo</li>
+                <li>Criatividade</li>
+                <li>Adaptabilidade</li>
+                <li>Organização</li>
             </ul>
         </div>
         <div class="myprojects">
@@ -52,7 +65,7 @@
             <a href="https://docs.google.com/document/d/1vb_PG04XEZMlavPRN9NbL_PE-BtqPaHL/edit?usp=sharing&ouid=110959205967745590410&rtpof=true&sd=true"><i class="fa-regular fa-file-lines"></i> Document</a>
         </div>
     </section>
-    <section>
+    <section id="projects">
         <h1>Projects</h1>
         <hr>
         <h2>Featured projects that highlight my skills.</h2>
@@ -63,7 +76,7 @@
         <button class="seta"><i class="fa-solid fa-arrow-right"></i></button>
         <a href="/html/projectsList.html"><i class="fa-solid fa-link"></i> See all projects</a>
     </section>
-    <section>
+    <section id="skills">
         <h1>Hard skills</h1>
         <hr>
         <h2>The technical foundation supporting my work.</h2>
@@ -71,7 +84,7 @@
 
         </div>
     </section>
-    <section>
+    <section id="certificate">
         <h1>Certificates</h1>
         <hr>
         <h2>My commitment to lifelong learning.</h2>
@@ -80,12 +93,12 @@
         </div>
         <button>See all certificates</button>
     </section>
-    <section class="contactme">
+    <section class="contactme" id="contactme">
         <img src="/img/venus.png" alt="venus">
         <div class="worktogether">
             <h1>Let's Work Together!</h1>
             <h2>Tell me about your next big idea.</h2>
-            <button class="connect">Let's connect</button>
+            <button class="connect">Let's connect<i class="fa-solid fa-arrow-right"></i></button>
         </div>
     </section>
     <footer>
@@ -109,6 +122,20 @@
     <script src="/js/Certificado.js"></script>
     <script src="/js/Tecnologia.js"></script>
     <script src="/js/Contato.js"></script>
+    <script>
+        const navButtons = document.querySelectorAll("nav button");
+        navButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const sectionId = button.getAttribute("data-section");
+                const targetSection = document.getElementById(sectionId);
+
+                targetSection.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            });
+        });
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const certificateManager = new CertificateManager();
