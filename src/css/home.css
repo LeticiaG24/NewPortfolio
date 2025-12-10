@@ -2,18 +2,23 @@
     background-color: transparent;
     color: white;
     border: none;
+    font-size: 1.1rem;
 }
 .left-hand {
     position: absolute;
     bottom: 0;
     left: 0;
     pointer-events: none;
+    transition: transform 0.5s ease-out;
+    transform-origin: left bottom;
 }
 .right-hand {
     position: absolute;
     top: 0;
     right: 0;
     pointer-events: none;
+    transition: transform 0.5s ease-out;
+    transform-origin: right bottom;
 }
 main {
     height: 100vh;
@@ -32,14 +37,14 @@ main h1 {
     line-height: 1px;
 }
 main h2 {
-    margin-top: 90px;
-}
-.email {
-    font-size: 1.1rem;
+    margin-top: 20%;
 }
 .introducao {
     position: absolute;
     justify-self: center;
+}
+header {
+    justify-items: left;
 }
 nav {
     display: flex;
@@ -50,7 +55,7 @@ nav {
 }
 nav button {
     background-color: transparent;
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
     border: none;
     font-size: 1.1rem;
     cursor: pointer;

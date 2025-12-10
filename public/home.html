@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/home.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,12 +20,13 @@
             <button data-section="projects">Projects</button>
             <button data-section="skills">Skills</button>
             <button data-section="certificate">Certificates</button>
+            <button data-section="contactme">Contact me</button>
         </nav>
     </header>
     <main id="home">
         <div class="hands">
-            <img src="/img/right-hand.png" alt="hand" class="right-hand">
-            <img src="/img/left-hand.png" alt="hand" class="left-hand">
+            <img src="/public/imagens/right-hand.png" alt="hand" class="right-hand">
+            <img src="/public/imagens/left-hand.png" alt="hand" class="left-hand">
         </div>
         <div class="introducao">
             <h2>Full Stack Developer</h2>
@@ -58,7 +59,7 @@
         </div>
         <div class="myprojects">
             <h3>See my projects</h3>
-            <a href="/html/projectsList.html"><i class="fa-solid fa-link"></i> Projetos</a>
+            <a href="/public/projectsList.html"><i class="fa-solid fa-link"></i> Projetos</a>
         </div>
         <div class="resume">
             <h3>Get my resume</h3>
@@ -74,7 +75,7 @@
             
         </div>
         <button class="seta"><i class="fa-solid fa-arrow-right"></i></button>
-        <a href="/html/projectsList.html"><i class="fa-solid fa-link"></i> See all projects</a>
+        <a href="/public/projectsList.html"><i class="fa-solid fa-link"></i> See all projects</a>
     </section>
     <section id="skills">
         <h1>Hard skills</h1>
@@ -94,7 +95,7 @@
         <button>See all certificates</button>
     </section>
     <section class="contactme" id="contactme">
-        <img src="/img/venus.png" alt="venus">
+        <img src="/public/imagens/venus.png" alt="venus">
         <div class="worktogether">
             <h1>Let's Work Together!</h1>
             <h2>Tell me about your next big idea.</h2>
@@ -103,7 +104,7 @@
     </section>
     <footer>
         <div class="leticia">
-            <img src="/img/logo.png" alt="logo">
+            <img src="/public/imagens/logo.png" alt="logo">
             <h1>Letícia Furtado</h1>
             <h2>Full Stack Developer</h2>
             <a href="https://www.linkedin.com/in/leticia-furtado-053b6033a/"><button><i class="fa-brands fa-linkedin"></i></button></a>
@@ -119,11 +120,13 @@
         </div>
         <p>© 2025 Letícia Furtado. All rights reserved.</p>
     </footer>
-    <script src="/js/Certificado.js"></script>
-    <script src="/js/Tecnologia.js"></script>
-    <script src="/js/Contato.js"></script>
+    <script src="/src/javascript/Certificado.js"></script>
+    <script src="/src/javascript/Tecnologia.js"></script>
+    <script src="/src/javascript/Contato.js"></script>
+    <script src="/src/javascript/Animacao.js"></script>
     <script>
         const navButtons = document.querySelectorAll("nav button");
+
         navButtons.forEach(button => {
             button.addEventListener("click", () => {
                 const sectionId = button.getAttribute("data-section");
