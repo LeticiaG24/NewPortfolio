@@ -26,7 +26,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     font-size: clamp(0.8rem, 2vw, 1rem);
     line-height: 15px;
-    margin: 10% 2% 0;
+    margin: 5% 2% 0;
 }
 footer img {
     height: 1.8rem;
@@ -81,6 +81,8 @@ footer > p {
     display: flex;
     justify-self: center;
     gap: 5%;
+    padding: 5%;
+    margin-top: 5%;
 }
 .contactme > img {
     height: 85vh;

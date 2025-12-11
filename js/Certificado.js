@@ -36,7 +36,10 @@ class CertificateManager {
 
     carregarCertificados() {
         this.certificados = [
-            new Certificate("Intro to SQL", "Kaggle", "10/2025", "Introdução a linguagem SQL", "/arquivos/Intro to SQL.png")
+            new Certificate("Intro to SQL", "Kaggle", "10/2025", "Fundamentos de SQL na prática, abordando seleção, filtragem, junções, agregações e manipulação de dados em bancos relacionais.", "/certificados/Intro to SQL.png"),
+            new Certificate("Modelagem de dados", "Fundação Bradesco", "10/2025", "Principais conceitos de modelagem de dados, incluindo modelos conceitual, lógico e físico, normalização e boas práticas.", "/certificados/Modelagem de dados.pdf"),
+            new Certificate("Curso básico de Git", "Cursa", "02/2025", "Controle de versões com Git, cobrindo criação de repositórios, commits, branches, merge e uso básico do GitHub para colaboração em projetos."),
+            new Certificate("Imersão Agentes de IA", "Alura & Google", "09/2025", "Criação de agentes de IA utilizando ferramentas do Google, explorando conceitos de IA generativa, automações e construção de agentes práticos.")
         ]
     }
     renderizarCertificados() {

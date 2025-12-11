@@ -86,20 +86,67 @@ header > nav {
     border-radius: 10px;
     border: 1px solid rgba(217, 217, 217, 0.1);
 }
+section h1 {
+    line-height: 5px;
+}
+hr {
+    width: 8%;
+    height: 2px;
+    border: none;
+    background-color: white;
+}
+#certificate {
+    justify-self: center;
+    text-align: center;
+    width: 95%;
+    padding-top: 5%;
+    margin-top: 5%;
+    justify-content: center;
+}
+.certificado-container {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    justify-content: flex-start;
+}
 .certificado-card {
-    width: 300px;
-    background-color: rgba(217, 217, 217, 0.03);
-    padding: 10px;
+    flex-shrink: 0; 
+    width: 33%;
+    background-color: rgba(217, 217, 217, 0.05);
+    padding: 2%;
+    border-radius: 5%;
+    margin-bottom: 10px;
+}
+.certificado-card h3 {
+    line-height: 5px;
 }
 .certificado-card > div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+.certificado-card > p {
+    text-align: left;
 }
 .certificado-card > a {
+    color: white;
     display: block;
     justify-self: end;
-    color: white;
 }
+
+.certificado-container::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.certificado-container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+.certificado-container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 .tec-container {
     display: flex;
     gap: 5px;
@@ -116,9 +163,6 @@ header > nav {
 .tec-container img {
     width: 80%;
     display: block;
-}
-section {
-    margin: 40px 0 40px;
 }
 .projeto-especifico {
     max-height: 300px;
