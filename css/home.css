@@ -162,13 +162,13 @@ hr {
     margin-bottom: 10px;
 }
 .certificado-card h3 {
-    line-height: 5px;
+    margin: 0;
 }
 .certificado-card > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
+    margin: 0;
 }
 .certificado-card > p {
     text-align: left;
