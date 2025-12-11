@@ -112,3 +112,10 @@ button {
     gap: 5px;
     flex-wrap: wrap;
 }
+.contato-modal {
+    display: block;
+    background-color: #313131;
+}
+#divEmail {
+    cursor: pointer;
+}

@@ -9,3 +9,13 @@ function copiar() {
             console.error("Erro ao copiar: ", err);
         });
 }
+
+function abrirModal() {
+    document.getElementById("contatoModal").style.display = "block";
+}
+function fecharModal() {
+  document.getElementById("contatoModal").style.display = "none";
+}
+document.getElementById('divEmail').addEventListener('click', function() {
+  copiar();
+});

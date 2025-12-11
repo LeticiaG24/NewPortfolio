@@ -33,7 +33,7 @@ class Projeto {
 
     render() {
         return `
-            <div class="projeto-especifico">
+            <div class="projeto-card">
                 <img src="${this.imagem}" alt="imagem">
                 <div>
                     <h2>${this.nome}</h2>

@@ -31,7 +31,7 @@
         <div class="introducao">
             <h2>Full Stack Developer</h2>
             <h1>Letícia Furtado</h1>
-            <p>Estudante de Análise e Desenvolvimento de Sistemas na Fatec e escolhi a área de tecnologia pelo meu interesse em resolver problemas de lógica e transformar ideias em soluções por meio da programação.</p>
+            <p>Full Stack Developer, unindo habilidades de front-end e back-end para criar soluções completas e eficientes. Resolvendo problemas de lógica, estruturando sistemas e buscando caminhos criativos para superar desafios técnicos.</p>
             <button class="email" value="leticia24062006@gmail.com" id="copiarEmail" onclick="copiar()">
                 <i class="fa-regular fa-clone"></i> leticia24062006@gmail.com
             </button>
@@ -40,6 +40,7 @@
     <section class="about" id="about">
         <div class="aboutme">
             <h3>About me</h3>
+            <p>Sou estudante de Análise e Desenvolvimento de Sistemas na FATEC, com grande interesse em resolver problemas de lógica e encontrar soluções criativas para desafios tecnológicos. Tenho facilidade em organização, trabalho em equipe e planejamento, o que me ajuda a atuar de forma estruturada e colaborativa em projetos.</p>
         </div>
         <div class="soft">
             <h3>Methodologies</h3>
@@ -70,11 +71,13 @@
         <h1>Projects</h1>
         <hr>
         <h2>Featured projects that highlight my skills.</h2>
-        <button class="seta"><i class="fa-solid fa-arrow-left"></i></button>
+        <div>
+            <button class="seta"><i class="fa-solid fa-arrow-left"></i></button>
         <div id="projetoContainer">
             
         </div>
         <button class="seta"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
         <a href="/projectsList.html"><i class="fa-solid fa-link"></i> See all projects</a>
     </section>
     <section id="skills">
@@ -98,7 +101,21 @@
         <div class="worktogether">
             <h1>Let's Work Together!</h1>
             <h2>Tell me about your next big idea.</h2>
-            <button class="connect">Let's connect<i class="fa-solid fa-arrow-right"></i></button>
+            <button class="connect" onclick="abrirModal()">Let's connect<i class="fa-solid fa-arrow-right"></i></button>
+            <div id="contatoModal" class="contato-modal">
+                <div>
+                    <button onclick="fecharModal()">&times</button>
+                    <h2>Let's Connect!</h2>
+                </div>
+                <div id="divEmail">
+                    <h3><i class="fa-regular fa-envelope"></i> Email</h3>
+                    <p>leticia24062006@gmail.com</p>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/leticia-furtado-053b6033a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/LeticiaG24"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
