@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/projectList.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>My projects</title>
 </head>
 <body>
@@ -17,7 +18,21 @@
         <h1>Filter</h1>
         <button>Clean Filter</button>
         <h1>Contact me!</h1>
-        <button class="connect">Let's connect</button>
+        <button class="connect" onclick="abrirModal()">Let's connect<i class="fa-solid fa-arrow-right"></i></button>
+            <div id="contatoModal" class="contato-modal">
+                <div class="close-modal">
+                    <button onclick="fecharModal()">&times</button>
+                    <h2>Let's Connect!</h2>
+                </div>
+                <div id="divEmail" class="div-email">
+                    <h3><i class="fa-regular fa-envelope"></i> Email</h3>
+                    <p>leticia.furtado2406@gmail.com</p>
+                </div>
+                <div class="redes-links">
+                    <a href="https://www.linkedin.com/in/leticia-furtado-053b6033a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/LeticiaG24"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
     </aside>
     <main>
         <h1>Explore</h1>

@@ -43,42 +43,11 @@ class Projeto {
                         </div>
                     </span>
                     <p>${this.descricao}</p>
-                    <a href="project.html"><button>Read more</button></a>
+                    <a href="${this.nome}.html">
+                    <button>Read more</button>
+                    </a>
                 </div>
             </div>
-        `;
-    }
-
-    renderDetalhes() {
-        return `
-            <img src="${this.imagem}" alt="${this.nome}">
-            <div>
-                <h1>${this.nome}</h1>
-                <button>GitHub</button>
-            </div>
-            <p>${this.descricao}</p>
-            <section>
-                <img src="" alt="">
-                <h2>Project Overview & Goal</h2>
-                <p></p>
-                <h2>The Fullstack Architecture</h2>
-                <ul>
-                    <li></li>
-                </ul>
-                <h2>My Role & Core Contributions</h2>
-                <ul>
-                    <li></li>
-                </ul>
-                <h2>Challenges & Learnings</h2>
-                <h3></h3>
-            </section>
-            <aside>
-                <h3>Index</h3>
-                <a href="">Project Overview & Goal</a>
-                <a href="">The Fullstack Architecture</a>
-                <a href="">My Role & Core Contributions</a>
-                <a href="">Challenges & Learnings</a>
-            </aside>
         `;
     }
 }

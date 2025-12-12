@@ -1,8 +1,12 @@
 body {
     display: flex;
+    left: 0;
+    top: 0;
+    height: 100vh;
 }
 aside {
-    width: 300px;
+    width: 20vw;
+    position: fixed;
 }
 .home {
     color: white;
@@ -19,4 +23,14 @@ aside {
 }
 .projeto-card > img {
     width: 90%;
+}
+main {
+    margin-left: 20vw; /* empurra o main para o lado do aside */
+    width: calc(100vw - 20vw); /* evita quebra do layout */
+    padding: 20px;
+    overflow-y: auto;
+}
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
 }
