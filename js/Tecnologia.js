@@ -24,7 +24,7 @@ class Tecnologia {
 }
 
 class Projeto {
-    constructor(imagem, nome, tecnologiaUsada, descricao) {
+    constructor(nome, imagem, tecnologiaUsada, descricao) {
         this.imagem=imagem;
         this.nome=nome;
         this.tecnologiaUsada=tecnologiaUsada;
@@ -43,9 +43,42 @@ class Projeto {
                         </div>
                     </span>
                     <p>${this.descricao}</p>
-                    <button>Read more</button>
+                    <a href="project.html"><button>Read more</button></a>
                 </div>
             </div>
+        `;
+    }
+
+    renderDetalhes() {
+        return `
+            <img src="${this.imagem}" alt="${this.nome}">
+            <div>
+                <h1>${this.nome}</h1>
+                <button>GitHub</button>
+            </div>
+            <p>${this.descricao}</p>
+            <section>
+                <img src="" alt="">
+                <h2>Project Overview & Goal</h2>
+                <p></p>
+                <h2>The Fullstack Architecture</h2>
+                <ul>
+                    <li></li>
+                </ul>
+                <h2>My Role & Core Contributions</h2>
+                <ul>
+                    <li></li>
+                </ul>
+                <h2>Challenges & Learnings</h2>
+                <h3></h3>
+            </section>
+            <aside>
+                <h3>Index</h3>
+                <a href="">Project Overview & Goal</a>
+                <a href="">The Fullstack Architecture</a>
+                <a href="">My Role & Core Contributions</a>
+                <a href="">Challenges & Learnings</a>
+            </aside>
         `;
     }
 }
@@ -101,7 +134,7 @@ class TechManager {
         const [python, java, js, html, css, mysql, figma, javafx, flask, git, github, maven, jira, canva] = this.tecnologias;
 
         this.projetos = [
-            new Projeto("/img/siraas.jpg", "SIRAAS", [python, flask, html, css, figma, canva], "Teste")
+            new Projeto("SIRAAS", "/img/siraas.jpg", [python, flask, html, css, figma, canva], "SIRAAS é um site de envio e gerenciamento de atestados médicos e times scrum. Seu sistema inclui gráficos estatísticos e exportação de arquivos.")
         ]
     }
 

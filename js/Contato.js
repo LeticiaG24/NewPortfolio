@@ -1,5 +1,5 @@
 function copiar() {
-    const email = "leticia@gmail.com";
+    const email = "leticia.furtado2406@gmail.com";
 
     navigator.clipboard.writeText(email)
         .then(() => {

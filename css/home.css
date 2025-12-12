@@ -34,10 +34,11 @@ main h1 {
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 7rem;
-    line-height: 1px;
+    margin: 0;
 }
 main h2 {
-    margin-top: 20%;
+    margin-top: 0;
+    padding-top: 20%;
 }
 .introducao {
     position: absolute;
@@ -45,13 +46,14 @@ main h2 {
 }
 header {
     justify-items: left;
+    position: relative;
+    z-index: 100;
 }
 header > nav {
     display: flex;
     gap: 20px;
     position: fixed;
     padding: 20px;
-    z-index: 100;
     background-color: #111111;
     border-bottom-right-radius: 30px;
 }
@@ -105,25 +107,39 @@ hr {
     margin-top: 5%;
     justify-items: center;
 }
+#projects > h2 {
+    margin-bottom: 2%;
+}
 #projects > a {
     color: white;
+    margin-top: 5%;
+    display: inline-block;
 }
 #projects > div {
     display: flex;
     align-items: center;
-    gap: 30px;
+    justify-content: center;
+    max-width: 90%;
+    gap: 5%;
 }
 .projeto-card {
-    max-height: 300px;
     display: flex;
     gap: 10px;
     text-align: left;
 }
 .projeto-card > img {
-    width: 400px;
-    height: 300px;
     object-fit: cover; 
     object-position: center;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+}
+.projeto-card h2 {
+    margin: 0;
+    padding: 2% 0;
+}
+.projeto-card p {
+    margin-top: 1%;
 }
 .seta {
     color: white;
@@ -149,12 +165,12 @@ hr {
 }
 .certificado-container {
     display: flex;
-    gap: 8px;
+    gap: 2%;
     overflow-x: auto;
     justify-content: flex-start;
 }
 .certificado-card {
-    flex-shrink: 0; 
+    flex-shrink: 0;
     width: 33%;
     background-color: rgba(217, 217, 217, 0.05);
     padding: 2%;
@@ -177,10 +193,9 @@ hr {
     color: white;
     display: block;
     justify-self: end;
+    margin-top: 6%;
 }
-
 .certificado-container::-webkit-scrollbar {
-  width: 5px;
   height: 5px;
 }
 .certificado-container::-webkit-scrollbar-thumb {
@@ -196,6 +211,8 @@ hr {
     gap: 5px;
     flex-wrap: wrap;
     justify-self: center;
+    justify-content: center;
+    width: 70vw;
 }
 .tec-container > div {
     background-color: rgba(217, 217, 217, 0.1);

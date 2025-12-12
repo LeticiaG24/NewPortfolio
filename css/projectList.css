@@ -9,7 +9,7 @@ aside {
     background-color: transparent;
     border: none;
 }
-.projeto-especifico {
+.projeto-card {
     width: 300px;
     background-color: rgba(217, 217, 217, 0.03);
     padding: 10px;
@@ -17,6 +17,6 @@ aside {
     flex-direction: column;
     align-items: center;
 }
-.projeto-especifico > img {
+.projeto-card > img {
     width: 90%;
 }
